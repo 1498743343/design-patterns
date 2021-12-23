@@ -14,7 +14,10 @@ public class JdkMain {
         UserService userService = new UserServiceImpl();
         JdkProxyHandler jdkProxyHandler = new JdkProxyHandler();
         UserService userServiceProxy = (UserService) jdkProxyHandler.getInstance(userService);
-        User user = new User("czh", 25);
+        User user = User.builder()
+                .name("czh")
+                .age(25)
+                .build();
         int result = userServiceProxy.add(user);
         System.out.println("result = " + result);
     }

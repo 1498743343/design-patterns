@@ -13,7 +13,10 @@ public class CglibMain {
     public static void main(String[] args) {
         CglibProxyInterceptor proxyInterceptor = new CglibProxyInterceptor();
         UserService service = (UserService)proxyInterceptor.getInstance(new UserService());
-        User user = new User("czh", 25);
+        User user = User.builder()
+                .name("czh")
+                .age(25)
+                .build();
         int add = service.add(user);
         System.out.println("add result = " + add);
         service.delete("czh");
