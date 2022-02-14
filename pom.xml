@@ -30,9 +30,19 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
-            <scope>test</scope>
         </dependency>
 
+        <!-- pdf 转 图片 测试引入的依赖 -->
+        <dependency>
+            <groupId>org.icepdf.os</groupId>
+            <artifactId>icepdf-core</artifactId>
+            <version>6.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.thunisoft.optimus</groupId>
+            <artifactId>convert-pdf</artifactId>
+            <version>2.2.0</version>
+        </dependency>
     </dependencies>
     
 </project>

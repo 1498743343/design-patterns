@@ -7,7 +7,7 @@ package com.chen.adapter;
  * @date 2021/12/24
  */
 public class TriangleAdapter implements Shape{
-    private Triangle triangle;
+    private final Triangle triangle;
     public TriangleAdapter(Triangle triangle) {
         this.triangle = triangle;
     }

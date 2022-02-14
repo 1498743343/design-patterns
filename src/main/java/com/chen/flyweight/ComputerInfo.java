@@ -1,6 +1,6 @@
 package com.chen.flyweight;
 
-import com.chen.builder.bean.Computer;
+import com.chen.create.builder.bean.Computer;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

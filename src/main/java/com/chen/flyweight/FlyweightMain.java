@@ -1,6 +1,6 @@
 package com.chen.flyweight;
 
-import com.chen.builder.bean.*;
+import com.chen.create.builder.bean.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
